@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/salesScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:scrollbars="none"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#000000"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvSalesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/alice"
+                android:text="📊 Sales Analytics"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select date range to generate report"
+                android:fontFamily="@font/poppins"
+                android:textSize="16sp"
+                android:textColor="#E8EAF6"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="-12dp"
+            android:background="@android:color/white">
+
+            <!-- Date Range Selection Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp"
+                card_view:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:text="📅 Select Report Period"
+                        android:textStyle="bold"
+                        android:textColor="#37474F"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Start Date Section -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:text="FROM"
+                            android:textColor="#9E9E9E"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.1"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/startDateCard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            card_view:cardCornerRadius="12dp"
+                            card_view:cardElevation="4dp"
+                            card_view:cardBackgroundColor="#E8F5E9">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="16dp"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:text="📅"
+                                    android:textSize="18sp"
+                                    android:gravity="center"
+                                    android:layout_marginEnd="12dp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvStartDate"
+                                        android:text="Select Start Date"
+                                        android:textSize="16sp"
+                                        android:textColor="#2E7D32"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/tvStartDateSubtext"
+                                        android:text="Tap to choose"
+                                        android:textSize="12sp"
+                                        android:textColor="#66BB6A"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="▶"
+                                    android:textSize="14sp"
+                                    android:textColor="#4CAF50" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <!-- End Date Section -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:text="TO"
+                            android:textColor="#9E9E9E"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:letterSpacing="0.1"
+                            android:fontFamily="@font/poppins"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/endDateCard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            card_view:cardCornerRadius="12dp"
+                            card_view:cardElevation="4dp"
+                            card_view:cardBackgroundColor="#E3F2FD">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="16dp"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="32dp"
+                                    android:layout_height="32dp"
+                                    android:text="📅"
+                                    android:textSize="18sp"
+                                    android:gravity="center"
+                                    android:layout_marginEnd="12dp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvEndDate"
+                                        android:text="Select End Date"
+                                        android:textSize="16sp"
+                                        android:textColor="#1976D2"
+                                        android:textStyle="bold"
+                                        android:fontFamily="@font/poppins"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:id="@+id/tvEndDateSubtext"
+                                        android:text="Tap to choose"
+                                        android:textSize="12sp"
+                                        android:textColor="#64B5F6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="▶"
+                                    android:textSize="14sp"
+                                    android:textColor="#2196F3" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <!-- Quick Select Options -->
+                    <TextView
+                        android:text="Quick Select"
+                        android:textColor="#9E9E9E"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"
+                        android:letterSpacing="0.1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <Button
+                            android:id="@+id/btnThisWeek"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="This Week"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#4CAF50"
+                            android:padding="12dp" />
+
+                        <Button
+                            android:id="@+id/btnThisMonth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="This Month"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#238728"
+                            android:padding="12dp" />
+
+                        <Button
+                            android:id="@+id/btnThisYear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="This Year"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:backgroundTint="#009688"
+                            android:padding="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnLastWeek"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="Last Week"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="12sp"
+                            android:textColor="#4CAF50"
+                            android:backgroundTint="#FFFFFF"
+                            android:padding="12dp"
+                            style="?android:attr/borderlessButtonStyle" />
+
+                        <Button
+                            android:id="@+id/btnLastMonth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            android:text="Last Month"
+                            android:textSize="12sp"
+                            android:textColor="#03A9F4"
+                            android:fontFamily="@font/poppins"
+                            android:backgroundTint="#FFFFFF"
+                            android:padding="12dp"
+                            style="?android:attr/borderlessButtonStyle" />
+
+                        <Button
+                            android:id="@+id/btnCustom"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Custom"
+                            android:textSize="12sp"
+                            android:textColor="#9E9E9E"
+                            android:fontFamily="@font/poppins"
+                            android:backgroundTint="#FFFFFF"
+                            android:padding="12dp"
+                            style="?android:attr/borderlessButtonStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Generate Report Button -->
+            <Button
+                android:id="@+id/btnGenerateReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#00BCD4"
+                android:enabled="false"
+                android:fontFamily="@font/poppins"
+                android:padding="10dp"
+                android:text="Generate Report"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Report Preview Card (Initially Hidden) -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reportPreviewCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="8dp"
+                card_view:cardBackgroundColor="#F3E5F5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:text="📈 Report Summary"
+                        android:textStyle="bold"
+                        android:textColor="#6A1B9A"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:text="Period:"
+                            android:textColor="#9E9E9E"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tvReportPeriod"
+                            android:text="Jan 1, 2025 - Jan 31, 2025"
+                            android:textColor="#6A1B9A"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:text="Total Sales:"
+                            android:textColor="#9E9E9E"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tvReportTotalSales"
+                            android:text="₱ 0.00"
+                            android:textColor="#6A1B9A"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:fontFamily="@font/poppins"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:text="Orders:"
+                            android:textColor="#9E9E9E"
+                            android:textSize="14sp"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tvReportOrderCount"
+                            android:text="0 orders"
+                            android:textColor="#6A1B9A"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:fontFamily="@font/poppins"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnViewDetailedReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View Report"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#6A1B9A"
+                        android:padding="12dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Info Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="4dp"
+                card_view:cardBackgroundColor="#F8F9FA">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:text="💡 How It Works"
+                        android:textStyle="bold"
+                        android:textColor="#37474F"
+                        android:fontFamily="@font/alice"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0E0E0"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:text="1️⃣ Select your start date and end date"
+                        android:textColor="#37474F"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="2️⃣ Use quick select buttons for common periods"
+                        android:textColor="#37474F"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="3️⃣ Click 'Generate Report' to view sales data"
+                        android:textColor="#37474F"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="📊 Reports include all completed paid orders within the selected period"
+                        android:textColor="#4CAF50"
+                        android:textSize="13sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

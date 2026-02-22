@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:background="@drawable/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <!-- Header with Order ID and Urgent Indicator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <View
+                android:id="@+id/urgent_indicator"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:background="#e74c3c"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="#ORD001"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2c3e50"
+                android:fontFamily="@font/alice" />
+
+            <TextView
+                android:id="@+id/tv_urgent_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URGENT"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#e74c3c"
+                android:background="#ffebee"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Customer and Table Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tv_customer_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="John Doe"
+                android:textSize="16sp"
+                android:textColor="#2c3e50"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_table_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Table 5"
+                android:textSize="14sp"
+                android:textColor="#7f8c8d"
+                android:background="#f5f5f5"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp" />
+
+        </LinearLayout>
+
+        <!-- Order Items -->
+        <TextView
+            android:id="@+id/tv_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2x Chicken Adobo, 1x Beef Stew, 3x Rice"
+            android:textSize="14sp"
+            android:textColor="#2c3e50"
+            android:layout_marginBottom="12dp"
+            android:lineSpacingMultiplier="1.2" />
+
+        <!-- Special Instructions -->
+        <TextView
+            android:id="@+id/tv_special_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: Extra spicy, no onions"
+            android:textSize="12sp"
+            android:textColor="#f39c12"
+            android:textStyle="italic"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"
+            android:background="#fef9e7"
+            android:padding="8dp" />
+
+        <!-- Time Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="#f5f5f5"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Time: "
+                android:textSize="12sp"
+                android:textColor="#7f8c8d"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_order_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12:30 PM"
+                android:textSize="12sp"
+                android:textColor="#7f8c8d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prep Time: "
+                android:textSize="12sp"
+                android:textColor="#7f8c8d"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_prep_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 min"
+                android:textSize="12sp"
+                android:textColor="#7f8c8d" />
+
+        </LinearLayout>
+
+        <!-- Action Button -->
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Cooking"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

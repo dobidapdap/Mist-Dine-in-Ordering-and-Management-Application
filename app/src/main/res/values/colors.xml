@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_dark">#2E3B4E</color>
+    <color name="accent_color">#FF6B35</color>
+    <color name="background_light">#F8F9FA</color>
+    <color name="text_secondary">#6C757D</color>
+    <color name="category_pasta">#E74C3C</color>
+    <color name="category_main_course">#3498DB</color>
+    <color name="category_soup">#F39C12</color>
+    <color name="category_salad">#27AE60</color>
+    <color name="category_pyro">#E67E22</color>
+    <color name="category_platter">#9B59B6</color>
+    <color name="category_snacks">#F1C40F</color>
+    <color name="category_drinks">#1ABC9C</color>
+    <color name="category_dessert">#E91E63</color>
+    <color name="tropical_white">#FFFFFF</color>
+    <color name="tropical_white_70">#B3FFFFFF</color>
+    <color name="tropical_overlay">#80000000</color>
+    <color name="primary_color">#FF6B35</color>
+    <color name="background_color">#F8F9FA</color>
+    <color name="primary_text_color">#212529</color>
+    <color name="secondary_text_color">#6C757D</color>
+    <color name="image_placeholder_color">#E9ECEF</color>
+    <color name="success_color">#28A745</color>
+    <color name="success_color_light">#D4F6DD</color>
+    <color name="warning_color">#FFC107</color>
+    <color name="warning_color_light">#FFF3CD</color>
+    <color name="recyclerview_background">#FFFFFF</color>
+    <color name="error_color">#F44336</color>
+    <!-- Additional colors for OrderStatusActivity -->
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="textColorSecondary">#666666</color>
+    <color name="dividerColor">#E0E0E0</color>
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="cardBackground">#FFFFFF</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+
+</resources>

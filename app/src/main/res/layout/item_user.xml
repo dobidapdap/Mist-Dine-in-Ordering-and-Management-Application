@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:text="Username"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/alice"
+            android:layout_marginStart="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:id="@+id/tvRole"
+            android:text="Role"
+            android:textSize="13sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:layout_weight="0.20" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:text="Active"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:text="Edit"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:minHeight="24dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/btnDeleteAccept"
+            android:text="Accept"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:minHeight="24dp"
+            android:minWidth="0dp" />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:text="Reject"
+            android:textSize="12sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:minHeight="24dp"
+            android:minWidth="0dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

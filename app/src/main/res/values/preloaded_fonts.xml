@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alice</item>
+        <item>@font/amethysta</item>
+        <item>@font/merriweather_light</item>
+        <item>@font/poppins</item>
+        <item>@font/sacramento</item>
+    </array>
+</resources>

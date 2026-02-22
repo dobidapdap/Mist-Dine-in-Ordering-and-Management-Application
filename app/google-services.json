@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295333923523",
+    "project_id": "mistpanglaocaferestaurant",
+    "storage_bucket": "mistpanglaocaferestaurant.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295333923523:android:b5c4ce55f880c9ec1fb076",
+        "android_client_info": {
+          "package_name": "com.example.mistcaferestaurantpanglao"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9KvA8gifZQpyl7bJA-KMxotrFxHCLor4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MistCafeRestaurantPanglao</string>
+
+    <string-array name="roles_array">
+        <item>admin</item>
+        <item>kitchen</item>
+        <item>counter</item>
+    </string-array>
+
+    <string-array name="dish_categories">
+        <item>Pasta</item>
+        <item>Main Course</item>
+        <item>Soup</item>
+        <item>Salad</item>
+        <item>Pyro Series</item>
+        <item>Platter</item>
+        <item>Snack</item>
+        <item>Drinks</item>
+        <item>Dessert</item>
+    </string-array>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

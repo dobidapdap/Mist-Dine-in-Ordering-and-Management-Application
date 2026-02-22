@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Dish Image -->
+        <ImageView
+            android:id="@+id/ivCartDishImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Dish image"
+            android:layout_marginEnd="12dp" />
+
+        <!-- Dish Info and Prices -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Dish Name -->
+            <TextView
+                android:id="@+id/tvCartDishName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dish Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/alice"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Unit Price -->
+            <TextView
+                android:id="@+id/tvCartPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₱0.00 each"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp" />
+
+            <!-- Total Price -->
+            <TextView
+                android:id="@+id/tvCartTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₱0.00"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Quantity Controls and Remove Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <ImageButton
+                    android:id="@+id/btnDecreaseQuantity"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_remove"
+                    android:background="@drawable/quantity_button_background"
+                    android:contentDescription="Decrease quantity"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:id="@+id/tvCartQuantity"
+                    android:layout_width="40dp"
+                    android:layout_height="32dp"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp" />
+
+                <ImageButton
+                    android:id="@+id/btnIncreaseQuantity"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_adds"
+                    android:background="@drawable/quantity_button_background"
+                    android:contentDescription="Increase quantity"
+                    android:scaleType="center" />
+            </LinearLayout>
+
+            <!-- Remove Button -->
+            <ImageButton
+                android:id="@+id/btnRemoveCartItem"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_delete"
+                android:background="@drawable/remove_button_background"
+                android:contentDescription="Remove item"
+                android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

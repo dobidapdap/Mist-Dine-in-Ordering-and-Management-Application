@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/mistlogo"
+                android:contentDescription="MIST Restaurant Logo"
+                android:layout_marginBottom="8dp"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MIST Restaurant Ordering Application"
+                android:textSize="18sp"
+                android:fontFamily="@font/alice"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complete Guide to Using Our App"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:textAlignment="center"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Guide Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@android:color/white"
+            android:padding="16dp">
+
+            <!-- Getting Started -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Getting Started"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to MIST Restaurant! This guide will help you navigate our ordering application and make the most of your dining experience.\n\n• Scan the QR code at your table to access the web app\n• Browse our digital menu with real-time availability\n• Customize your orders to your preferences\n• Track your order status from kitchen to table"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Browsing the Menu -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Browsing the Menu"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navigate our menu with ease:\n\n• Browse by categories (Appetizers, Main Course, Desserts, Drinks)\n• View detailed descriptions for each item\n• Check prices\n• Search for specific items using the search function"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Placing an Order -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Placing an Order"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Step-by-step ordering process:\n\n• Select your desired menu item\n• Customize your order\n• Add items to your cart\n• Review your cart before submitting\n• Confirm your order to send it to the counter\n• Receive instant confirmation"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Order Tracking -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Tracking Your Order"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stay updated on your order status:\n\n•Enter your table number and the name you entered when submitting your order in the Status icon in the menu.\n\nYou'll receive real-time notifications as your order progresses through each stage."
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Managing Your Orders"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Control your dining experience:\n\n• View your current active orders\n• Check order history\n• Cancel items if needed (before preparation starts)\n• Request assistance from staff through the app"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Special Features -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Special Features"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make the most of our app:\n\n• QR Code Scanning: Quick access via table QR codes\n• Real-Time Updates: Live menu availability and pricing\n• Order Customization: Personalize every dish to your taste\n• Multiple Orders: Place multiple orders throughout your meal\n• Rating System: Share feedback on your dining experience"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Staff Features (For Restaurant Staff) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Staff Features"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For restaurant staff members:\n\n• Access staff dashboard with login credentials\n• Manage menu items (add, edit, delete, update availability)\n• View and manage all customer orders\n• Update order statuses in real-time\n• Access order history and analytics\n• Manage staff accounts and permissions\n• View rating statistics and customer feedback"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Troubleshooting -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Troubleshooting"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Common issues and solutions:\n\n• QR Code Won't Scan: Ensure good lighting and camera permissions are enabled\n• Menu Not Loading: Check your internet connection and refresh the page\n• Order Not Submitting: Verify all required fields are filled and try again\n• Status Not Updating: Click refresh button to refresh or restart the app\n• Can't Modify Order: Orders cannot be changed once kitchen preparation begins\n\nIf issues persist, please notify restaurant staff for assistance."
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Tips for Best Experience -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. Tips for the Best Experience"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get the most from your visit:\n\n• Order appetizers and drinks first while browsing the main menu\n• Rate your experience to help us improve\n• Keep the app open to receive real-time order updates"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Privacy and Security -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Privacy and Security"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your information is safe with us:\n\n• No personal information is shared with third parties\n• Secure connection for all transactions\n• Data retention follows best practices\n• You can request data deletion at any time"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Contact and Support -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11. Contact and Support"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Need help? We're here for you:\n\n• In-Restaurant: Ask any staff member for assistance\n• Phone: +63 9995 069 2557\n• Location: Purok 5, Barangay Danao, Panglao, Bohol\n• Operating Hours: 10:00 AM - 10:00 PM daily\n\nFor technical issues or feedback about the app, please speak with our staff or use the Help &amp; Support option in the Settings menu."
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Version Information -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12. App Information"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This guide is current as of November 2025. The app is regularly updated with new features and improvements. Check the About section in Settings for the latest version information.\n\nThank you for choosing MIST Restaurant. We hope this guide helps you enjoy a seamless dining experience!"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2025 MIST Restaurant. All rights reserved."
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
